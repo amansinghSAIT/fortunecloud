@@ -1,0 +1,141 @@
+/* ========== Base Styles ========== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .main-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  /* ========== Home Page Cards ========== */
+  .courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px #007bff55;
+  }
+  
+  .card.clicked {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 3px #1a73e8;
+  }
+  
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  /* ========== Detail Course Page ========== */
+  .course-container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .course-container h1 {
+    font-size: 2.4rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .course-icon {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+  }
+  
+  .course-container h2 {
+    margin-top: 30px;
+    color: #222;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 6px;
+  }
+  
+  .course-container ul,
+  .course-container ol {
+    margin-left: 30px;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  
+  .course-container li {
+    margin: 10px 0;
+  }
+  
+  .course-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  .cta-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .cta-button a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+  }
+  
+  .cta-button a:hover {
+    background-color: #1558b0;
+    transform: scale(1.05);
+  }
+  
+  /* ========== Animations ========== */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  

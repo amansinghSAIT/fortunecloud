@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>amankumarsingh</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="favicon.png"> 
+</head>
+<body>
+  <h1 class="main-title">Explore Our Courses</h1>
+
+  <!-- Wrapper for inline span cards -->
+  <div class="courses-container">
+    <span class="card" onclick="goTo('pages/java.html')" data-page="pages/java.html">
+      <img src="java.jpg" alt="Java Icon" class="card-icon" />
+      <h3>Full Stack with Java (Edge)</h3>
+      <p>Learn enterprise app development with Java and Spring Boot.</p>
+    </span>
+
+    <span class="card" onclick="goTo('pages/python.html')" data-page="pages/python.html">
+      <img src="python.png" alt="Python Icon" class="card-icon" />
+      <h3>Full Stack with Python</h3>
+      <p>Build modern apps with Django/Flask and frontend tech.</p>
+    </span>
+
+    <span class="card" onclick="goTo('pages/cloud.html')" data-page="pages/cloud.html">
+      <img src="cloud.png" alt="Cloud Icon" class="card-icon" />
+      <h3>Cloud Computing</h3>
+      <p>Master AWS, Azure, and DevOps for cloud deployments.</p>
+    </span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
